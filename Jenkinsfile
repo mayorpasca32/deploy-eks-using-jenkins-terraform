@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="011138670495"
+        AWS_ACCOUNT_ID="654654452336"
         AWS_DEFAULT_REGION="us-east-2"     
     }
     stages {
@@ -13,10 +13,10 @@ pipeline {
            }
            steps {
               script {
-                  sh "terraform destroy --auto-approve"
-                  // sh "terraform init"
-                  // sh "terraform plan"
-                  // sh " terraform apply --auto-approve"
+                //   sh "terraform destroy --auto-approve"
+                  sh "terraform init"
+                  sh "terraform plan"
+                  sh " terraform apply --auto-approve"
             }
         }
                
