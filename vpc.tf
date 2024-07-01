@@ -1,5 +1,6 @@
 provider "aws" {
     region = "us-east-2"
+    profile = "labake"
 }
 
 variable vpc_cidr_block {}
